@@ -12,3 +12,8 @@ cinesuper-<regno>/
 │   ├── 05_queries.sql
 │   └── 06_personalisation.sql
 └── screenshots/
+
+
+git add .
+git commit -m "Phase 3: create tables"
+git push
