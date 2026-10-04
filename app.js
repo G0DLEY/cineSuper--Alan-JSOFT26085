@@ -44,7 +44,7 @@ async function loadGenres() {
 
 // 4. SELECT * FROM movie_ratings (the view)
 async function loadRatings() {
-  const { data, error } = await db.from("movie_ratings").select("id, avg_rating, review_count");
+  const { data, error } = await db.from("movie_ratings").select('id, title, release_year, language, duration_min, description, poster_url, genre_id, director')
   if (error) return console.error(error);
   ratingsMap = {};
   data.forEach((r) => (ratingsMap[r.id] = r));

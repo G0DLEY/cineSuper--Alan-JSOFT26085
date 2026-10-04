@@ -58,7 +58,72 @@ insert into movies (title, release_year, language, duration_min, description, po
   ('Oppenheimer', 2023, 'English', 180,
    'The story of J. Robert Oppenheimer and the creation of the atomic bomb.',
    'https://placehold.co/300x450/7c2d12/ffffff?text=Oppenheimer',
-   (select id from genres where name = 'Biography'));
+   (select id from genres where name = 'Biography')
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   145/);
 
 insert into reviews (movie_id, reviewer_name, rating, comment) values
   ((select id from movies where title = 'Drishyam'),        'Anjali',  5, 'Georgekutty is a genius!'),
@@ -69,3 +134,15 @@ insert into reviews (movie_id, reviewer_name, rating, comment) values
   ((select id from movies where title = 'Interstellar'),    'Nikhil',  5, 'Mind-blowing science.'),
   ((select id from movies where title = 'Inception'),       'Arjun',   4, 'Need to watch it twice.'),
   ((select id from movies where title = 'The Dark Knight'), 'Akhil',   5, 'The Joker is legendary.');
+  INSERT INTO movies
+(title, release_year, language, duration_min, description, poster_url, genre_id)
+VALUES
+('Interstellar', 2014, 'English', 169, 'A journey through space and time.', 'https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg', 1),
+
+('Premalu', 2024, 'Malayalam', 156, 'A romantic comedy about young love.', 'https://image.tmdb.org/t/p/w500/8M5q1xj8b4.jpg', 2),
+
+('Drishyam', 2013, 'Malayalam', 164, 'A family faces an unexpected crisis.', 'https://image.tmdb.org/t/p/w500/example.jpg', 3),
+
+('The Conjuring', 2013, 'English', 112, 'A family experiences terrifying supernatural events.', 'https://image.tmdb.org/t/p/w500/example.jpg', 4),
+
+('Manjummel Boys', 2024, 'Malayalam', 135, 'Friends face a dangerous situation during a trip.', 'https://image.tmdb.org/t/p/w500/example.jpg', 5);
